@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.enableds.azures" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <feature name="Permissions">
+        <param name="android-package" value="com.android.plugins.Permissions" />
+    </feature>
+    <name>Azures</name>
+    <description>
+        A sample Apache Cordova application that responds to the deviceready event.
+    </description>
+    <author email="dev@cordova.apache.org" href="http://cordova.io">
+        Apache Cordova Team
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <allow-intent href="market:*" />
+    <icon density="ldpi" src="res/icon/android/ldpi.png" />
+    <icon density="mdpi" src="res/icon/android/mdpi.png" />
+    <icon density="hdpi" src="res/icon/android/hdpi.png" />
+    <icon density="xhdpi" src="res/icon/android/xhdpi.png" />
+    <icon density="xxhdpi" src="res/icon/android/xxhdpi.png" />
+    <splash density="port-hdpi" src="res/screen/android/screen-hdpi-portrait.png" />
+    <splash density="port-ldpi" src="res/screen/android/screen-ldpi-portrait.png" />
+    <splash density="port-mdpi" src="res/screen/android/screen-mdpi-portrait.png" />
+    <splash density="port-xhdpi" src="res/screen/android/screen-xhdpi-portrait.png" />
+    <config-file after="uses-permission" parent="/manifest" target="AndroidManifest.xml">
+        <uses-permission android:name="android.permission.CAMERA" />
+        <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+        <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+        <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+        <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+        <uses-permission android:name="android.permission.ACCESS_WIMAX_STATE" />
+        <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+        <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+        <uses-permission android:name="android.permission.CHANGE_WIMAX_STATE" />
+        <uses-permission android:name="android.permission.CONNECTIVITY_INTERNAL" />
+        <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+        <uses-permission android:name="android.permission.LOOP_RADIO" />
+        <uses-permission android:name="android.permission.NFC" />
+        <uses-permission android:name="android.permission.READ_WIFI_CREDENTIAL" />
+        <uses-permission android:name="android.permission.RECEIVE_DATA_ACTIVITY_CHANGE" />
+        <uses-permission android:name="android.permission.SCORE_NETWORKS" />
+        <uses-permission android:name="permission:android.permission.MANAGE_DOCUMENTS" />
+        <uses-permission android:name="permission:android.permission.READ_EXTERNAL_STORAGE" />
+        <uses-permission android:name="permission:android.permission.WRITE_EXTERNAL_STORAGE" />
+        <uses-permission android:name="permission:android.permission.WRITE_MEDIA_STORAGE" />
+        <uses-permission android:name="permission:android.permission.ACCESS_SUPERUSER" />
+        <uses-permission android:name="permission:android.permission.READ_SYNC_SETTINGS" />
+        <uses-permission android:name="permission:android.permission.READ_SYNC_STATS" />
+        <uses-permission android:name="permission:android.permission.WRITE_SYNC_SETTINGS" />
+        <uses-permission android:name="permission:android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+        <uses-permission android:name="permission:android.permission.ACCESS_MOCK_LOCATION" />
+        <uses-permission android:name="permission:android.permission.BATTERY_STATS" />
+        <uses-permission android:name="permission:android.permission.BLUETOOTH_STACK" />
+        <uses-permission android:name="permission:android.permission.CLEAR_APP_CACHE" />
+        <uses-permission android:name="permission:android.permission.NET_ADMIN" />
+        <uses-permission android:name="permission:android.permission.NET_TUNNELING" />
+        <uses-permission android:name="permission:android.permission.START_ANY_ACTIVITY" />
+        <uses-permission android:name="permission:android.permission.BLUETOOTH" />
+        <uses-permission android:name="permission:android.permission.BLUETOOTH_ADMIN" />
+        <uses-permission android:name="permission:android.permission.BLUETOOTH_MAP" />
+        <uses-permission android:name="permission:android.permission.BLUETOOTH_PRIVILEGED" />
+        <uses-permission android:name="permission:android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+        <uses-permission android:name="permission:android.permission.FLASHLIGHT" />
+        <uses-permission android:name="permission:android.permission.TRANSMIT_IR" />
+        <uses-permission android:name="permission:android.permission.VIBRATE" />
+        <uses-permission android:name="permission:android.permission.WAKE_LOCK" />
+    </config-file>
+    <preference name="loglevel" value="DEBUG" />
+</widget>

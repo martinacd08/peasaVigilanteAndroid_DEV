@@ -1,0 +1,469 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>Azures BootStrap</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900|Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+
+<body class="theme-light">
+
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+
+<div id="page">
+
+    <!-- header and footer bar go here-->
+    <div class="header header-fixed header-auto-show header-logo-app">
+        <a href="#" data-back-button class="header-title header-subtitle">Back to Components</a>
+        <a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-arrow-left"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-2 show-on-theme-dark"><i class="fas fa-sun"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-2 show-on-theme-light"><i class="fas fa-moon"></i></a>
+        <a href="#" data-menu="menu-highlights" class="header-icon header-icon-3"><i class="fas fa-brush"></i></a>
+        <a href="#" data-menu="menu-main" class="header-icon header-icon-4"><i class="fas fa-bars"></i></a>
+    </div>
+    <div id="footer-bar" class="footer-bar-5">
+        <a href="index-components.html" class="active-nav"><i data-feather="heart" data-feather-line="1" data-feather-size="21" data-feather-color="red-dark" data-feather-bg="red-fade-light"></i><span>Features</span></a>
+        <a href="index-media.html"><i data-feather="image" data-feather-line="1" data-feather-size="21" data-feather-color="green-dark" data-feather-bg="green-fade-light"></i><span>Media</span></a>
+        <a href="index.html"><i data-feather="home" data-feather-line="1" data-feather-size="21" data-feather-color="blue-dark" data-feather-bg="blue-fade-light"></i><span>Home</span></a>
+        <a href="index-pages.html"><i data-feather="file" data-feather-line="1" data-feather-size="21" data-feather-color="brown-dark" data-feather-bg="brown-fade-light"></i><span>Pages</span></a>
+        <a href="index-settings.html"><i data-feather="settings" data-feather-line="1" data-feather-size="21" data-feather-color="dark-dark" data-feather-bg="gray-fade-light"></i><span>Settings</span></a>
+    </div>
+
+    <div class="page-content" style="min-height:60vh!important">
+        <div class="page-title page-title-small">
+            <h2><a href="#" data-back-button><i class="fa fa-arrow-left"></i></a>Headers</h2>
+            <a href="#" data-menu="menu-main" class="bg-fade-highlight-light shadow-xl preload-img" data-src="images/avatars/5s.png"></a>
+        </div>
+        <div class="card header-card shape-rounded" data-card-height="150">
+            <div class="card-overlay bg-highlight opacity-95"></div>
+            <div class="card-overlay dark-mode-tint"></div>
+            <div class="card-bg preload-img" data-src="images/pictures/20s.jpg"></div>
+        </div>
+
+        <div class="card card-style mt-5 mb-5">
+            <div class="content">
+                <p>
+                    These headers support left, right and center logos or text and even the app styled version
+                    where the back button is on the maximum left or right near the logo depending on the RTL or LTR version you're using
+                </p>
+            </div>
+            <div class="row ps-3 mb-0">
+                <div class="col-6">
+                    <ul class="icon-list">
+                        <li><i class="fa fa-check color-green-dark"></i> Header App</li>
+                        <li><i class="fa fa-check color-green-dark"></i> Header Left</li>
+                        <li><i class="fa fa-check color-green-dark"></i> Header Right</li>
+                        <li><i class="fa fa-check color-green-dark"></i> Header Center</li>
+                        <li><i class="fa fa-check color-green-dark"></i> Show on Scroll</li>
+                    </ul>
+                </div>
+                <div class="col-6">
+                    <ul class="icon-list">
+                        <li><i class="fa fa-check color-green-dark"></i> Logo Text</li>
+                        <li><i class="fa fa-check color-green-dark"></i> Logo Image</li>
+                        <li><i class="fa fa-check color-green-dark"></i> Up to 5 Icons</li>
+                        <li><i class="fa fa-check color-green-dark"></i> Badge Support</li>
+                        <li><i class="fa fa-check color-green-dark"></i> Light / Dark & Colors</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- demo styles. this code can be deleted and should not be used in production code -->
+        <style>
+            .header.header-demo{height:55px!important;}
+            .header.header-demo .header-icon{margin-top:0px!important;}
+            .header.header-demo .header-title{margin-top:0px!important;}
+            .header.header-demo .header-logo{margin-top:0px!important;}
+        </style>
+
+
+        <div class="header header-demo header-logo-left mb-3">
+            <a href="index.html" class="header-logo">Enabled<span class="color-highlight"> Mobile</span></a>
+            <a href="#" class="header-icon header-icon-1"><i class="fas fa-envelope"></i><span class="badge bg-green-dark">5</span></a>
+            <a href="#" class="header-icon header-icon-2"><i class="fas fa-bars"></i></a>
+            <a href="#" class="header-icon header-icon-3"><i class="fas fa-heart color-red-light"></i></a>
+            <a href="#" class="header-icon header-icon-4"><i class="fas fa-share-alt"></i></a>
+        </div>
+
+        <div class="header header-demo header-logo-center mb-4">
+            <a href="index.html" class="header-logo">Enabled<span class="color-highlight"> Mobile</span></a>
+            <a href="#" class="header-icon header-icon-1"><i class="fas fa-envelope"></i><span class="badge bg-blue-dark">5</span></a>
+            <a href="#" class="header-icon header-icon-2"><i class="fas fa-bars"></i></a>
+            <a href="#" class="header-icon header-icon-3"><i class="fas fa-heart color-red-light"></i></a>
+            <a href="#" class="header-icon header-icon-4"><i class="fas fa-share-alt"></i></a>
+        </div>
+
+        <div class="header header-demo header-logo-right mb-4">
+            <a href="index.html" class="header-logo">Enabled<span class="color-highlight"> Mobile</span></a>
+            <a href="#" class="header-icon header-icon-1"><i class="fas fa-envelope"></i><span class="badge bg-highlight">5</span></a>
+            <a href="#" class="header-icon header-icon-2"><i class="fas fa-bars"></i></a>
+            <a href="#" class="header-icon header-icon-3"><i class="fas fa-heart color-red-light"></i></a>
+            <a href="#" class="header-icon header-icon-4"><i class="fas fa-share-alt"></i></a>
+        </div>
+
+
+        <div class="card card-style mt-5 mb-5">
+            <div class="content">
+                <h4>Menus in Headers</h4>
+                <p>
+                    These headers fully support the Boostrap 4.4 dropdown system, allowing you to have a dropdown menu for each icon of the menu.
+                </p>
+            </div>
+            <div class="row ps-3 mb-0">
+                <div class="col-6">
+                    <ul class="icon-list">
+                        <li><i class="fa fa-check color-green-dark"></i> Header App</li>
+                        <li><i class="fa fa-check color-green-dark"></i> Header Left</li>
+                        <li><i class="fa fa-check color-green-dark"></i> Header Right</li>
+                        <li><i class="fa fa-check color-green-dark"></i> Header Center</li>
+                    </ul>
+                </div>
+                <div class="col-6">
+                    <ul class="icon-list">
+                        <li><i class="fa fa-check color-green-dark"></i> Logo Text</li>
+                        <li><i class="fa fa-check color-green-dark"></i> Logo Image</li>
+                        <li><i class="fa fa-check color-green-dark"></i> Up to 4 Icons</li>
+                        <li><i class="fa fa-check color-green-dark"></i> Light & Dark</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="header header-demo header-logo-app mb-3">
+            <a href="index.html" class="header-title header-subtitle">Tap the Right Icons</a>
+            <a href="#" class="header-icon header-icon-1"><i class="fas fa-arrow-left"></i></a>
+
+            <div id="header-icon-2-group">
+                <button type="button" id="header-2" data-bs-toggle="dropdown" class="header-icon header-icon-2"><i class="fas fa-share-alt"></i><span class="badge bg-green-dark">3</span></button>
+                <div class="dropdown-menu bg-theme border-0 shadow-l rounded-s me-2 mt-2" aria-labelledby="header-2">
+                    <p class="font-10 ps-3 pe-3 font-500 mb-0">Tap to Share - Off in Demo</p>
+                    <div class="divider mb-0"></div>
+                    <div class="list-group list-custom-small ps-2 pe-3">
+                        <a href="#">
+                            <i class="fab font-18 fa-facebook-square color-facebook"></i>
+                            <span>Facebook</span>
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab font-18 fa-twitter-square color-twitter"></i>
+                            <span>Twitter</span>
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                        <a href="#" class="border-0">
+                            <i class="fab font-18 fa-whatsapp-square color-whatsapp"></i>
+                            <span>WhatsApp</span>
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="header-icon-3-group">
+                <button type="button" id="header-3" data-bs-toggle="dropdown" class="header-icon header-icon-3"><i class="fas fa-bars"></i><span class="badge bg-highlight">7</span></button>
+                <div class="dropdown-menu bg-theme border-0 shadow-l rounded-s me-2 mt-2" aria-labelledby="header-3">
+                    <p class="font-10 ps-3 pe-3 font-500 mb-0">Mini Menu</p>
+                    <div class="divider mb-0"></div>
+                    <div class="list-group list-custom-small ps-2 pe-3">
+                        <a href="#">
+                            <i class="fa font-14 fa-home color-blue-dark"></i>
+                            <span>Home</span>
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa font-14 fa-cog color-gray-dark"></i>
+                            <span>Features</span>
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa font-14 fa-file color-green-dark"></i>
+                            <span>Pages</span>
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa font-14 fa-mobile color-dark-dark"></i>
+                            <span>Appstyle</span>
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa font-14 fa-camera color-brown-dark"></i>
+                            <span>Galleries</span>
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa font-14 fa-image color-red-dark"></i>
+                            <span>Portfolios</span>
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                        <a href="#" class="border-0">
+                            <i class="fa font-14 fa-envelope color-blue-dark"></i>
+                            <span>Contact Us</span>
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="card card-style mt-5 mb-5">
+            <div class="content">
+                <h4>Colorful Headers</h4>
+                <p class="pb-0">
+                    Classic full colors or even gradients. It's super easy to use. All the above features and colors work togheter to obtain perfectly powerful headers.
+                </p>
+            </div>
+            <div class="row ps-3 mb-0">
+                <div class="col-6">
+                    <ul class="icon-list">
+                        <li><i class="fa fa-check color-green-dark"></i> Solid Colors</li>
+                    </ul>
+                </div>
+                <div class="col-6">
+                    <ul class="icon-list">
+                        <li><i class="fa fa-check color-green-dark"></i> Gradients</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- footer and footer card-->
+        <div class="footer">
+			<div class="footer card card-style mx-0 mb-0">
+				<a href="#" class="footer-title pt-4">AZURES</a>
+				<p class="text-center font-12 mt-n1 mb-3 opacity-70">
+					Put a little <span class="color-highlight">color</span> in  your life
+				</p>
+				<p class="boxed-text-l">
+					Built to match the design trends and give your page the awesome facelift it deserves.
+				</p>
+				<div class="text-center mb-3">
+					<a href="#" class="icon icon-xs rounded-sm shadow-l me-1 bg-facebook"><i class="fab fa-facebook-f"></i></a>
+					<a href="#" class="icon icon-xs rounded-sm shadow-l me-1 bg-twitter"><i class="fab fa-twitter"></i></a>
+					<a href="#" class="icon icon-xs rounded-sm shadow-l me-1 bg-phone"><i class="fa fa-phone"></i></a>
+					<a href="#" data-menu="menu-share" class="icon icon-xs rounded-sm me-1 shadow-l bg-red-dark"><i class="fa fa-share-alt"></i></a>
+					<a href="#" class="back-to-top icon icon-xs rounded-sm shadow-l bg-highlight color-white"><i class="fa fa-arrow-up"></i></a>
+				</div>
+				<p class="footer-copyright pb-3 mb-1">Copyright &copy; Enabled <span id="copyright-year">2017</span>. All Rights Reserved.</p>
+			</div>
+			<div class="footer-card card shape-rounded bg-20" style="height:230px">
+				<div class="card-overlay bg-highlight opacity-90"></div>
+			</div>
+		</div>
+    </div>
+    <!-- end of page content-->
+
+    <div id="menu-share"
+         class="menu menu-box-bottom menu-box-detached rounded-m"
+         data-menu-height="420"
+         data-menu-effect="menu-over">
+		 <h1 class="text-center font-700 font-26 mt-3 pt-2">Share Azures</h1>
+		 <p class="boxed-text-xl under-heading">
+			 Share our page with the world, increase <br>
+			 your page exposure with the world.
+		 </p>
+		 <div class="divider divider-margins"></div>
+		 
+		 <div class="px-4">
+			 <div class="row text-center mb-0">
+				 <div class="col-3 mb-n2">
+					 <a href="#" class="external-link shareToFacebook icon icon-l bg-facebook rounded-s shadow-l"><i class="fab fa-facebook-f font-22"></i><br></a>
+					 <p class="font-11 opacity-70">Facebook</p>
+				 </div>
+				 <div class="col-3 mb-n2">
+					 <a href="#" class="external-link shareToTwitter icon icon-l bg-twitter rounded-s shadow-l"><i class="fab fa-twitter font-22"></i><br></a>
+					 <p class="font-11 opacity-70">Twitter</p>
+				 </div>
+				 <div class="col-3 mb-n2">
+					 <a href="#" class="external-link shareToLinkedIn icon icon-l bg-linkedin rounded-s shadow-l"><i class="fab fa-linkedin-in font-22"></i><br></a>
+					 <p class="font-11 opacity-70">LinkedIn</p>
+				 </div>
+				 <div class="col-3 mb-n2">
+					 <a href="#" class="external-link shareToMail icon icon-l bg-mail rounded-s shadow-l"><i class="fa fa-envelope font-22"></i><br></a>
+					 <p class="font-11 opacity-70">Email</p>
+				 </div>
+				 <div class="col-3 mb-n2">
+					 <a href="#" class="external-link shareToWhatsApp icon icon-l bg-whatsapp rounded-s shadow-l"><i class="fab fa-whatsapp font-22"></i><br></a>
+					 <p class="font-11 opacity-70">WhatsApp</p>
+				 </div>
+				 <div class="col-3 mb-n2">
+					 <a href="#" class="shareToCopyLink icon icon-l bg-blue-dark rounded-s shadow-l">
+						 <i class="fa fa-link not-copied font-22"></i>
+						 <i class="fa fa-check copied disabled font-22"></i>
+					 <br></a>
+					 <p class="font-11 opacity-70">Copy URL</p>
+				 </div>
+				 <div class="col-3 mb-n2">
+					 <a href="#" class="external-link shareToPinterest icon icon-l bg-pinterest rounded-s shadow-l"><i class="fab fa-pinterest-p font-22"></i><br></a>
+					 <p class="font-11 opacity-70">Pinterest</p>
+				 </div>
+				 <div class="col-3 mb-n2">
+					 <a href="#" class="close-menu icon icon-l bg-red-dark rounded-s shadow-l"><i class="fa fa-times font-22"></i><br></a>
+					 <p class="font-11 opacity-70">Close</p>
+				 </div>
+			 </div>
+		 </div>
+		 
+		 <div class="divider divider-margins mt-n1 mb-3"></div>
+		 <p class="text-center font-10 mb-0">Copyright <span class="copyright-year">2021</span> - Enabled. All rights reserved.</p>
+    </div>
+
+    <div id="menu-highlights"
+         class="menu menu-box-bottom menu-box-detached rounded-m"
+         data-menu-height="510"
+         data-menu-effect="menu-over">
+		 <div class="card header-card color-card shape-rounded" style="height:40%">
+			 <div class="card-overlay bg-highlight opacity-95"></div>
+			 <div class="card-bg preload-img" data-src="images/pictures/20s.jpg"></div>
+		 </div>
+		 
+		 <div class="card bg-transparent mb-0">
+			 <h1 class="text-center color-white mt-4 font-35 font-800">AZURES</h1>
+			 <p class="text-center color-white font-12 mt-n1 pb-2 mb-3">Put a little color in your life</p>
+		 </div>
+		 
+		 <div class="card card-style">
+			 <div class="highlight-changer pt-3 pb-2">
+				 <p class="text-center">
+					 Azures is packed with a beautiful color scheme.<br>Tap on your favorite! The page will adapt!
+				 </p>
+				 <a href="#" data-change-highlight="blue"><i class="fa fa-circle color-blue-dark"></i><span class="color-blue-light">Default</span></a>
+				 <a href="#" data-change-highlight="red"><i class="fa fa-circle color-red-dark"></i><span class="color-red-light">Red</span></a>    
+				 <a href="#" data-change-highlight="orange"><i class="fa fa-circle color-orange-dark"></i><span class="color-orange-light">Orange</span></a>    
+				 <a href="#" data-change-highlight="pink2"><i class="fa fa-circle color-pink2-dark"></i><span class="color-pink2-light">Pink</span></a>    
+				 <a href="#" data-change-highlight="magenta"><i class="fa fa-circle color-magenta-dark"></i><span class="color-magenta-light">Purple</span></a>    
+				 <a href="#" data-change-highlight="aqua"><i class="fa fa-circle color-aqua-dark"></i><span class="color-aqua-light">Aqua</span></a>      
+				 <a href="#" data-change-highlight="teal"><i class="fa fa-circle color-teal-dark"></i><span class="color-teal-light">Teal</span></a>      
+				 <a href="#" data-change-highlight="mint"><i class="fa fa-circle color-mint-dark"></i><span class="color-mint-light">Mint</span></a>      
+				 <a href="#" data-change-highlight="green"><i class="fa fa-circle color-green-dark"></i><span class="color-green-light">Green</span></a>    
+				 <a href="#" data-change-highlight="grass"><i class="fa fa-circle color-green-dark"></i><span class="color-green-light">Grass</span></a>       
+				 <a href="#" data-change-highlight="sunny"><i class="fa fa-circle color-yellow-dark"></i><span class="color-yellow-dark">Sunny</span></a>    
+				 <a href="#" data-change-highlight="yellow"><i class="fa fa-circle color-yellow-dark"></i><span class="color-yellow-light">Goldish</span></a>
+				 <a href="#" data-change-highlight="brown"><i class="fa fa-circle color-brown-dark"></i><span class="color-brown-light">Wood</span></a>    
+				 <a href="#" data-change-highlight="gray"><i class="fa fa-circle color-gray-dark"></i><span class="color-gray-light">Gray</span></a>
+				 <a href="#" data-change-highlight="dark"><i class="fa fa-circle color-dark-dark"></i><span class="color-dark-light">Dark</span></a>
+				 <div class="clearfix"></div>
+			 </div>
+		 </div>
+		 <a href="#" class="close-menu btn btn-full btn-margins rounded-sm shadow-l bg-highlight btn-m font-900 text-uppercase mb-0">Close color Menu</a>
+    </div>
+
+    <div id="menu-main"
+         class="menu menu-box-right menu-box-detached rounded-m"
+         data-menu-width="260"
+         data-menu-active="nav-features"
+         data-menu-effect="menu-over">
+		 <div class="menu-header">
+			 <a href="#" data-toggle-theme class="border-right-0"><i class="fa font-12 color-yellow-dark fa-lightbulb"></i></a>
+			 <a href="#" data-menu="menu-highlights" class="border-right-0"><i class="fa font-12 color-green-dark fa-brush"></i></a>
+			 <a href="#" data-menu="menu-share" class="border-right-0"><i class="fa font-12 color-red-dark fa-share-alt"></i></a>
+			 <a href="index-settings.html" class="border-right-0"><i class="fa font-12 color-blue-dark fa-cog"></i></a>
+			 <a href="#" class="close-menu border-right-0"><i class="fa font-12 color-red-dark fa-times"></i></a>
+		 </div>
+		 
+		 <div class="menu-logo text-center">
+			 <a href="#"><img class="rounded-circle bg-highlight" width="80" src="images/avatars/5s.png"></a>
+			 <h1 class="pt-3 font-800 font-28 text-uppercase">Azures</h1>
+			 <p class="font-11 mt-n2">Put a little <span class="color-highlight">color</span> in your life.</p>
+		 </div>
+		 
+		 <div class="menu-items mb-4">
+			 <h5 class="text-uppercase opacity-20 font-12 pl-3">Menu</h5>
+			 <a id="nav-welcome" href="index.html">
+				 <i data-feather="home" data-feather-line="1" data-feather-size="16" data-feather-color="blue-dark" data-feather-bg="blue-fade-light"></i>
+				 <span>Welcome</span>
+				 <em class="badge bg-highlight color-white">HOT</em>
+				 <i class="fa fa-circle"></i>
+			 </a>
+			 <a id="nav-starters" href="pages-starters.html">
+				 <i data-feather="star" data-feather-line="1" data-feather-size="16" data-feather-color="yellow-dark" data-feather-bg="yellow-fade-light"></i>
+				 <span>Starters</span>
+				 <i class="fa fa-circle"></i>
+			 </a>
+			 <a id="nav-features" href="index-components.html">
+				 <i data-feather="heart" data-feather-line="1" data-feather-size="16" data-feather-color="red-dark" data-feather-bg="red-fade-light"></i>
+				 <span>Features</span>
+				 <i class="fa fa-circle"></i>
+			 </a>
+			 <a id="nav-pages" href="index-pages.html">
+				 <i data-feather="file" data-feather-line="1" data-feather-size="16" data-feather-color="brown-dark" data-feather-bg="brown-fade-light"></i>
+				 <span>Pages</span>
+				 <i class="fa fa-circle"></i>
+			 </a>
+			 <a id="nav-media" href="index-media.html">
+				 <i data-feather="image" data-feather-line="1" data-feather-size="16" data-feather-color="green-dark" data-feather-bg="green-fade-light"></i>
+				 <span>Media</span>
+				 <i class="fa fa-circle"></i>
+			 </a>
+			 <a id="nav-shapes" href="index-shapes.html">
+				 <i data-feather="hexagon" data-feather-line="1" data-feather-size="16" data-feather-color="magenta-dark" data-feather-bg="magenta-fade-light"></i>
+				 <span>Shapes</span>
+				 <i class="fa fa-circle"></i>
+			 </a>
+			 <a href="#" data-submenu="sub-contact">
+				 <i data-feather="mail" data-feather-line="1" data-feather-size="16" data-feather-color="blue-dark" data-feather-bg="blue-fade-light"></i>
+				 <span>Contact</span>
+				 <strong class="badge bg-highlight color-white"></strong>
+				 <i class="fa fa-circle"></i>
+			 </a>
+			 <div id="sub-contact" class="submenu">
+				 <a href="contact.html" id="nav-contact"><i class="fa fa-envelope color-blue2-dark font-16 opacity-30"></i><span>Email</span><i class="fa fa-circle"></i></a>
+				 <a href="#"><i class="fa fa-phone color-green1-dark font-16 opacity-50"></i><span>Phone</span><i class="fa fa-circle"></i></a>
+				 <a href="#"><i class="fab fa-whatsapp color-whatsapp font-16 opacity-30"></i><span>WhatsApp</span><i class="fa fa-circle"></i></a>
+			 </div>
+			 <a id="nav-settings" href="index-settings.html">
+				 <i data-feather="settings" data-feather-line="1" data-feather-size="16" data-feather-color="gray-light" data-feather-bg="gray-fade-light"></i>
+				 <span>Settings</span>
+				 <i class="fa fa-circle"></i>
+			 </a>
+			 <a href="#" class="close-menu">
+				 <i data-feather="x" data-feather-line="3" data-feather-size="16" data-feather-color="red-dark" data-feather-bg="red-fade-dark"></i>
+				 <span>Close</span>
+				 <i class="fa fa-circle"></i>
+			 </a>
+		 </div>
+		 
+		 <div class="text-center">
+			 <a href="#" class="icon icon-xs mr-1 rounded-s bg-facebook"><i class="fab fa-facebook"></i></a>
+			 <a href="#" class="icon icon-xs mr-1 rounded-s bg-twitter"><i class="fab fa-twitter"></i></a>
+			 <a href="#" class="icon icon-xs mr-1 rounded-s bg-instagram"><i class="fab fa-instagram"></i></a>
+			 <a href="#" class="icon icon-xs mr-1 rounded-s bg-linkedin"><i class="fab fa-linkedin-in"></i></a>
+			 <a href="#" class="icon icon-xs rounded-s bg-whatsapp"><i class="fab fa-whatsapp"></i></a>
+			 <p class="mb-0 pt-3 font-10 opacity-30">Copyright <span class="copyright-year"></span> Enabled. All rights reserved</p>
+		 </div>
+    </div>
+
+    <div id="menu-cookie-bottom" class="menu menu-box-bottom menu-box-detached rounded-m"
+         data-menu-height="230"
+         data-menu-effect="menu-over"
+         data-menu-select="page-components">
+        <!-- add data-cookie-activate above to auto-activate the menu on cookie detection -->
+        <div class="boxed-text-xl">
+            <h2 class="text-center mt-3 pt-1">We're using cookies</h2>
+            <p class="text-center mt-n2 mb-3 color-highlight">To make your experience awesome!</p>
+            <p>
+                Our page uses cookies to make your overall experience better, faster and smoother. It's awesome.
+            </p>
+            <!-- add hide-cookie to the class to delete the cookie-->
+            <a href="#" class="close-menu btn btn-sm btn-center-xl rounded-xs shadow-m bg-highlight text-uppercase font-900">Accept</a>
+        </div>
+    </div>
+
+
+</div>
+
+
+
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>
