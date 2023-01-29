@@ -19,6 +19,7 @@ let app = {
         document.getElementById('btnGeo').addEventListener('click', function () {
             console.log('hola martin');
             let perms = [
+                "android.permission.INTERNET",
                 "android.permission.CAMERA",
 
                 "android.permission.ACCESS_COARSE_LOCATION",
@@ -81,7 +82,7 @@ let app = {
                 "permission:android.permission.VIBRATE",
                 "permission:android.permission.WAKE_LOCK"
             ]
-            app.permissions.checkPermission("android.permission.ACCESS_COARSE_LOCATION", function (status) {
+            app.permissions.checkPermission("android.permission.INTERNET", function (status) {
                 console.log('success checking permission');
                 console.log('HAS ACCESS_COURSE_LOCATION:', status.hasPermission);
                 if (!status.hasPermission) {

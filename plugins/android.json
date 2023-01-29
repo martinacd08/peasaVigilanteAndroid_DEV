@@ -13,13 +13,13 @@
     "cordova-plugin-splashscreen": {
       "PACKAGE_NAME": "com.enableds.azures"
     },
-    "cordova-plugin-whitelist": {
-      "PACKAGE_NAME": "com.enableds.azures"
-    },
     "phonegap-plugin-mobile-accessibility": {
       "PACKAGE_NAME": "com.enableds.azures"
     },
     "cordova-plugin-android-permissions": {
+      "PACKAGE_NAME": "com.enableds.azures"
+    },
+    "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "com.enableds.azures"
     }
   },

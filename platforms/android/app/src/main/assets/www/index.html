@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
+<meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -95,6 +96,9 @@
             <div class="row">
                 <div class="col-6">
                     <a id="btnGeo" class="btnGeo btn btn-full btn-m bg-red-dark rounded-sm text-uppercase shadow-l font-900">grant permissions</a>
+                </div>
+                <div class="col-6">
+                    <a id="btnServiceTesintg" class="btn btn-full btn-m bg-red-dark rounded-sm text-uppercase shadow-l font-900">testing web service</a>
                 </div>
                 <div class="col-6">
                     <a href="#" class="btn btn-full btn-border btn-m rounded-s text-uppercase font-900 shadow-l border-highlight color-highlight">Contact US</a>
@@ -629,6 +633,8 @@
 
 </div>
 
+<script language="JavaScript" type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script>
+<script language="JavaScript" type="text/javascript" src="scripts/jquery.mobile-1.4.5.min.js"></script>
 
 <script type="text/javascript">
 	var deviceReady = function(){
@@ -640,7 +646,9 @@
 </script>
 <script src="cordova.js"></script>
 <script type="text/javascript" src="scripts/index.js"></script>
-<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
 
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/servicetesting.js"></script>
 <script type="text/javascript" src="scripts/custom.js"></script>
+
 </body>

@@ -14,26 +14,32 @@
   "license": "Apache-2.0",
   "devDependencies": {
     "cordova-android": "^9.0.0",
+    "cordova-browser": "^6.0.0",
     "cordova-ios": "^6.2.0",
     "cordova-plugin-android-permissions": "^1.1.5",
     "cordova-plugin-cors": "^1.1.3",
     "cordova-plugin-device": "git+https://github.com/apache/cordova-plugin-device.git",
     "cordova-plugin-network-information": "git+https://github.com/apache/cordova-plugin-network-information.git",
     "cordova-plugin-splashscreen": "github:apache/cordova-plugin-splashscreen",
-    "cordova-plugin-whitelist": "^1.3.4",
+    "cordova-plugin-whitelist": "^1.3.5",
     "phonegap-plugin-mobile-accessibility": "github:phonegap/phonegap-mobile-accessibility"
   },
   "cordova": {
     "plugins": {
-      "cordova-plugin-whitelist": {},
       "phonegap-plugin-mobile-accessibility": {},
       "cordova-plugin-splashscreen": {},
       "cordova-plugin-cors": {},
-      "cordova-plugin-android-permissions": {}
+      "cordova-plugin-android-permissions": {},
+      "cordova-plugin-whitelist": {}
     },
     "platforms": [
       "ios",
-      "android"
+      "android",
+      "browser"
     ]
+  },
+  "dependencies": {
+    "ajax": "^0.0.4",
+    "jquery": "^3.6.3"
   }
 }

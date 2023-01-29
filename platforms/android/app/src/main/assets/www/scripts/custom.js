@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     'use strict'
 
     //Global Variables
-    let isPWA = true;  // Enables or disables the service worker and PWA
+    let isPWA = false;  // Enables or disables the service worker and PWA
     let isAJAX = true; // AJAX transitions. Requires local server or server
     var pwaName = "Azures"; //Local Storage Names for PWA
     var pwaRemind = 1; //Days to re-remind to add to home
@@ -611,6 +611,14 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
         }
+
+
+
+       
+
+
+
+
         var locationBut = document.querySelectorAll('.get-location');
         if(locationBut.length){
             var locationSupport = document.getElementsByClassName('location-support')[0]
@@ -1176,6 +1184,78 @@ document.addEventListener('DOMContentLoaded', () => {
             };
         }
 
+ //services
+ document.getElementById('btnServiceTesintg').addEventListener('click', 
+ 
+ function (){
+    console.log("click on button");
+   
+    /*var settings = {
+        'cache': false,
+        'dataType': "jsonp",
+        "async": false,
+        "crossDomain": true,
+        "url": "http://peasanodejsdev.dreamhosters.com:9988/testing",
+        "method": "GET",
+        "headers": {
+        "accept": "application/json",
+        "Access-Control-Allow-Origin":"*"
+        }
+        }
+
+        $.ajax(settings).done(function (response) {
+            console.log("todo bien");
+            console.log(response);
+            }).error(function(error){
+                console.log("error");
+                console.log(error);
+            });*/
+
+
+
+            $.ajax({
+                url: "http://peasanodejsdev.dreamhosters.com:9988/testing",
+                type: 'GET',
+                headers: {
+                    'Access-Control-Allow-Origin': '*',
+                    'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS'
+                },
+                success: function (data) {
+                    console.log(
+                        data
+                    );
+                    alert(data);
+                }
+            });
+
+
+            /*$.ajax({
+                
+                
+                headers: {
+                    'Access-Control-Allow-Origin': '*',
+                    'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS'
+                },
+                type:     "get",
+                cache:    false,
+                url:      "http://peasanodejsdev.dreamhosters.com:9988/testing",
+                dataType: "text",
+                error: function(xhr, status, error) {
+                   
+                    alert(xhr.responseText);
+                  },
+                success: function (response) {
+                    console.log(
+                        response
+                    );
+                    alert(response);
+                }
+            });*/
+        
+         });
+
+
+
         //Collapse Flip Icon
         var collapseBtn = document.querySelectorAll('[data-bs-toggle="collapse"]:not(.no-effect)');
         if(collapseBtn.length){
@@ -1455,7 +1535,10 @@ document.addEventListener('DOMContentLoaded', () => {
             if(!checkPWA.classList.contains('isPWA')){
                 if ('serviceWorker' in navigator) {
                   window.addEventListener('load', function() {
-                    navigator.serviceWorker.register(pwaLocation, {scope: pwaScope}).then(function(registration){registration.update();})
+                    navigator.serviceWorker.register(pwaLocation, {scope: pwaScope}).then(
+                        function(registration){
+                            registration.update();
+                        })
                   });
                 }
 

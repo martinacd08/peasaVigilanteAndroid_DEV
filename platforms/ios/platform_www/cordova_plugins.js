@@ -62,8 +62,8 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
     "cordova-plugin-device": "2.0.4-dev",
     "cordova-plugin-network-information": "3.0.0-dev",
     "cordova-plugin-splashscreen": "6.0.1-dev",
-    "cordova-plugin-whitelist": "1.3.4",
     "phonegap-plugin-mobile-accessibility": "1.0.5-dev",
-    "cordova-plugin-android-permissions": "1.1.5"
+    "cordova-plugin-android-permissions": "1.1.5",
+    "cordova-plugin-whitelist": "1.3.5"
   };
 });

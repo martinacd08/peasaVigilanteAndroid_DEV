@@ -11,13 +11,11 @@ xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cor
         Apache Cordova Team
     </author>
     <content src="index.html" />
-    <access origin="*" />
-    <allow-intent href="http://*/*" />
-    <allow-intent href="https://*/*" />
-    <allow-intent href="tel:*" />
-    <allow-intent href="sms:*" />
-    <allow-intent href="mailto:*" />
-    <allow-intent href="geo:*" />
+<allow-navigation href="*" />
+<allow-intent href="*" />
+<access origin="*" />
+
+    <allow-navigation href="data:*" />
     <platform name="android">
     <!--preference name="android-minSdkVersion" value="22" /-->
         <allow-intent href="market:*" />
